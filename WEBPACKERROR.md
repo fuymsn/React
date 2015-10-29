@@ -11,9 +11,10 @@ here are the following cases:
 * the incorrect path within Entry
 
 ##Module not found: Error: Cannot resolve module 'react/lib/ReactDOM' in sth path
-forget to add "." in this resolve block
+* forget to add "." in this resolve block
 ```js
 resolve:{
 	extensions: ["", ".js", ".jsx"]
 }
 ```
+* error path in entry block
