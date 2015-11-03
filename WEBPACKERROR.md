@@ -18,3 +18,9 @@ resolve:{
 }
 ```
 * error path in entry block
+
+##Uncaught TypeError: Cannot read property 'call' of undefined
+如果错误出现在代码 modules[moduleId].call(module.exports, module, module.exports, __webpack_require__); 中，有可能是如下原因引起：
+*  commonsPlugin中的common.js写成了common
+*  It can be caused by having a commons chunk (which will include the runtime) and an entry point that the commons chunk didn't reference, and thus includes the runtime itself.
+[参考] https://github.com/webpack/webpack/issues/1081
