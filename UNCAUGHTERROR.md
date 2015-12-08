@@ -22,5 +22,5 @@ getInitialState: function(){
 2. 以传参的方式（字符串拼接）
 ```js
 var urllink = "http://img.x.com/x.jpg";
-<img style={{ backgroundImage:"url(http://p1.1room1.co/public/images/vzhubo.jpg)" }} />
+<img style={{ backgroundImage:"url("+ urllink +")" }} />
 ```
