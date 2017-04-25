@@ -1,16 +1,16 @@
-#Collection of Webpack Error
+# Collection of Webpack Error
 
-###Show detail error
+### Show detail error
 if you want to show the detail error, pls run webpack with --display-error-details
 ```
 $ webpack --display-error-details
 ```
 
-###ERROR in Entry module not found: Error: Cannot resolve 'file' or 'directory'
+### ERROR in Entry module not found: Error: Cannot resolve 'file' or 'directory'
 here are the following cases:
 * the incorrect path within Entry
 
-###Module not found: Error: Cannot resolve module 'react/lib/ReactDOM' in sth path
+### Module not found: Error: Cannot resolve module 'react/lib/ReactDOM' in sth path
 * forget to add "." in this resolve block
 ```js
 resolve:{
@@ -19,7 +19,7 @@ resolve:{
 ```
 * error path in entry block
 
-###Uncaught TypeError: Cannot read property 'call' of undefined
+### Uncaught TypeError: Cannot read property 'call' of undefined
 如果错误出现在如下代码中：
 ```js
 modules[moduleId].call(module.exports, module, module.exports, __webpack_require__); 
