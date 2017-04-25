@@ -1,12 +1,12 @@
-#Collection of Reactjs Uncaught Error
+# Collection of Reactjs Uncaught Error
 
-##Uncaught Error
+## Uncaught Error
 Uncaught Error: Invariant Violation: _registerComponent(...): Target container is not a DOM element.
 ```js
 ReactDOM.render(<abc />, document.getElementById("abc"));  //id绑定错误
 ```
 
-##Uncaught TypeError
+## Uncaught TypeError
 Uncaught TypeError: Cannot read property 'map' of undefined
 ```js
 getInitialState: function(){
@@ -14,7 +14,7 @@ getInitialState: function(){
 }
 ```
 
-##style属性在jsx中内嵌写法
+## style属性在jsx中内嵌写法
 #### 1. 以不传参的方式：
 ```js
 <img style={{ backgroundImage:"url(http://p1.1room1.co/public/images/vzhubo.jpg)" }} />
