@@ -6,6 +6,17 @@ Uncaught Error: Invariant Violation: _registerComponent(...): Target container i
 ReactDOM.render(<abc />, document.getElementById("abc"));  //id绑定错误
 ```
 
+Uncaught Error: React DOM tree root should always have a node reference.
+1. 当组件传值丢失时，报此错误
+2. 当jsx dom里的变量没有声明时，报此错
+```jsx
+render(){
+	return (
+		<div className={ customerClassName }></div> //customerClassName没有定义
+	)
+}
+```
+
 ## Uncaught TypeError
 Uncaught TypeError: Cannot read property 'map' of undefined
 ```js
