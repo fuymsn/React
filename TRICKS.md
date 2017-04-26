@@ -18,7 +18,7 @@ classes.push(style2);
 
 render() {
     return (
-        <div className={ classes } ></div>
+        <div className={ classes.join(" ") } ></div>
     )
 }
 ```
